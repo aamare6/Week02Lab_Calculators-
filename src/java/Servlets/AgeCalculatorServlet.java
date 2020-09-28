@@ -31,6 +31,7 @@ public class AgeCalculatorServlet extends HttpServlet {
             throws ServletException, IOException {
     
         String age = request.getParameter("userAge");
+        request.setAttribute("ageInput", age);
         int ageNextYear;
 
         String output = "";
